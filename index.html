@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="passgen_style.css">
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <div id="container">
+            <div class="header-part">
+                <h1>Password Generator</h1>
+                <img src="password-lock.svg" width="80px">
+            </div>
+            <p id="password-output"></p>
+            <form id="form-container">
+                <label for="length-input">Password Length: </label>
+                <input type="number" id="length-input" min="8" max="12" value="9">
+                <label for="include-numbers">Include Numbers: </label>
+                <input type="checkbox" id="include-numbers">
+                <label for="include-symbols">Include Symbols: </label>
+                <input type="checkbox" id="include-symbols">
+            </form>
+            <button id="submit-button">Generate Password</button>
+        </div>
+        <script src="passgen_app.js"></script>
+    </body>
+</html>
